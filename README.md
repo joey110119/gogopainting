@@ -1,16 +1,25 @@
-#http://keychat.online
+# Project - GOGOPAINTING
+Use Golang with Gopherjs to make a web multiplayer draw and guess chatroom.
 
-# keyChat
-### 一个基于golang的匿名聊天室程序
+## Language Used
+1. Golang (by GopherJS to JS)
+2. JS
 
-随意输入用户名 和 房间号，会根据房间号进入聊天室
+## FlowChart
+![image](https://imgur.com/a/eixyiYr)
 
-聊天所有的记录不会被保存。
+## How to Mousemove, Mouseclick
+#### By Golang
+Use the Ebiten engine to make the Mousemove and Mouseclick effect.
 
-this is a anonymous chatting program,
+## How to put Mouse effect on web
+#### By GopherJS
+Unfortunately, if only do with Ebiten, we can not make the Mouse effect on the web. It can only be an .exe file. So we use GopherJs to make the Golang become JS code, and put it on the open source "Beego Chatroom". Then we can see the mouse effect on the web.
 
-input a username and a roomid then you can go to a chatting room which is identified by the roomid that you typed.
+## About the chatroom
+#### BY Beego
+When we have already implement Mouse effect on the web chatroom. We add some code on the Beego open source code. With these codes, we can achieve the Guess capability.
 
-By beego and websocket
-
-[keyChat](http://keychat.online)
+## How to send plots
+#### By JS socket
+Use socket to send the points which is drawed to the JS server when the plot was drew, then the server will send the whole plots were drew to all of the clients. As this way, the whole players would see the plots which were drew by the drawer immediately.
