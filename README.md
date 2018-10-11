@@ -6,7 +6,7 @@ Use Golang with Gopherjs to make a web multiplayer draw and guess chatroom.
 2. JS
 
 ## FlowChart
-![image](https://imgur.com/a/n2TL17S)
+![image](https://github.com/F74046501/gogopainting/blob/master/GOGOPAINTING%20Flow%20chart.png)
 
 ## How to Mousemove, Mouseclick
 #### -By Golang
